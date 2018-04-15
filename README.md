@@ -26,18 +26,3 @@ The "Advanced" page shows the more convenient way of writing React/Redux applica
 The counters on both pages operate identically the only difference being that the counter on the "Basic" page is implemented the "conventional" (old-fashioned) way and the counter on the "Advanced" page is implemented using the ["redux module"](https://github.com/catamphetamine/react-website#redux-module) utility from `react-website` library.
 
 `react-website` library packs a lot of utilities not showcased here for sake of simplicity, such as [`@preload()`ing pages](https://github.com/catamphetamine/react-website#preloading-pages), [making `http` requests](https://github.com/catamphetamine/react-website#http-utility), [setting `<meta/>` tags](https://github.com/catamphetamine/react-website#setting-title-and--tags), [programmatic navigation](https://github.com/catamphetamine/react-website#changing-current-location), and more...
-
-## Windows
-
-`npm start` [freezes on Windows](https://github.com/parcel-bundler/parcel/issues/1137) on `Building ...` when you try to run it. If you're persistent with `Ctrl + C` and running it again and again then it can suddenly start working after, say, 50 tries. It still can break and stop watching, etc. A workaround for this freezing bug is to open `./node_modules/parcel-bundler/src/WorkerFarm.js` file and add a `maxConcurrentCallsPerWorker` option to it:
-
-```js
-class WorkerFarm extends Farm {
-  constructor(options) {
-    let opts = {
-      maxConcurrentWorkers: getNumWorkers(),
-      maxConcurrentCallsPerWorker: 5
-    };
- ```
-
-It might output a warning `Cannot statically evaluate fs argument` but it can be ignored.
