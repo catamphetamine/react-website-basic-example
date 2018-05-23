@@ -40,6 +40,6 @@
     "parcel-bundler": "^1.7.1",
     "postcss-custom-properties": "^7.0.0",
     "postcss-nested": "^3.0.0",
-    "react-hot-loader": "^4.0.1"
+    "react-hot-loader": "^4.2.0"
   }
 }
