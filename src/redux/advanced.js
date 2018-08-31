@@ -1,11 +1,10 @@
 // https://github.com/catamphetamine/react-website#redux-module
 import { reduxModule } from 'react-website'
 
-const redux = reduxModule('ADVANCED')
+const redux = reduxModule()
 
 export const set = redux.action(
-  'SET',
-  async ({ http }, value) => value,
+  (value) => async http => value,
   'value'
 )
 
