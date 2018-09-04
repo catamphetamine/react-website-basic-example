@@ -1,7 +1,7 @@
 // https://github.com/catamphetamine/react-website#redux-module
-import { reduxModule } from 'react-website'
+import { ReduxModule } from 'react-website'
 
-const redux = reduxModule()
+const redux = new ReduxModule()
 
 export const set = redux.action(
   (value) => async http => value,
