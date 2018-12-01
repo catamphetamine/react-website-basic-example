@@ -1,7 +1,7 @@
-// React-router v3 routes
+// Routes.
 import routes from './routes'
 
-// Redux reducers
+// Redux reducers.
 // (they will be combined into the
 //  root Redux reducer via `combineReducers()`)
 import * as reducers from './redux'
