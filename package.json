@@ -29,7 +29,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
-    "react-website": "^3.1.20",
+    "react-website": "^3.1.24",
     "redux": "^4.0.1"
   },
   "devDependencies": {
